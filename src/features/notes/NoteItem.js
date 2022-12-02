@@ -49,7 +49,7 @@ const NoteItem = ({note}) => {
     <td className={style}>{note.title}</td>
     <td className={style}>{note.priority}</td>
     <td className={style}>{note.dueDate}</td>
-    <td className={style}> <Link to={`/note/put/${note.id}`}>Edit</Link><a onClick={()=>onDeleteHanlder()}>Delete</a></td>
+    <td className={style}> <Link className='toEdit option' to={`/note/put/${note.id}`}>Edit/ </Link><a className='option' onClick={()=>onDeleteHanlder()}>Delete</a></td>
     </tr>
   )
 }
