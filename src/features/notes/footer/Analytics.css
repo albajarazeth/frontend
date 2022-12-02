@@ -1,0 +1,12 @@
+.analytics-main-container{
+    border: 2px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.analytics-container{
+    display: flex;
+    justify-content: space-between;
+}
+.analytics-container li{
+    list-style-type: none;
+}

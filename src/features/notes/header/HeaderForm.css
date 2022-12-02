@@ -1,0 +1,26 @@
+.header-form-main-container{
+    border: 2px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+.header-form-container{
+    display: flex;
+    justify-content: space-between;
+}
+.header-form-section{
+    margin-bottom: 1rem;
+}
+.header-labler-one{
+    padding-right: 1rem;
+}
+.header-labler-two{
+    padding-right: .5rem;
+}
+.header-labler-three{
+    padding-right: 1.3rem;
+}
+.header-btn{
+    position: relative;
+    top: 70px;
+}

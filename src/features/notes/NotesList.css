@@ -1,0 +1,21 @@
+.list{
+    margin-top: 1rem;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid gray;
+    text-align: left;
+    padding: 8px;
+  }
+  tbody{
+    width: 100%;
+    display: table;
+}
+th{
+  background-color: #dddddd;
+}

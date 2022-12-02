@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import NotesList from './features/notes/NotesList';
+import AddNotesForm from './features/notes/AddNotesForm';
+import Layout from './components/Layout';
+import { Routes, Route } from 'react-router-dom';
+import EditNotesForm from './features/notes/EditNotesForm';
 
 function App() {
+  //1:50 link
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Routes>
+        <Route path='/' element={<Layout />}>
+  
+        <Route path='/' element={<NotesList />} />
+       
+
+        <Route path='note'>
+          <Route path=':id' /*element={}*/ />
+          <Route index element={<AddNotesForm/>} />
+          <Route path='put/:id' element={<EditNotesForm />} />
+        </Route>
+        </Route>
+      </Routes>
+
+      
     </div>
   );
 }
